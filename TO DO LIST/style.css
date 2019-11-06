@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 10px; /*1rem = 10px*/
+  margin: 1rem;
+  width: 36rem;
+}
+.header{
+  height: 6em;
+  background-color: gray;
+  color: white;
+  padding: .5rem;
+  margin-bottom: 1.5rem;
+}
+.title{
+  font-size: 2rem;
+  text-align: center;
+}
+.list-add-area{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#list-input-area{
+  width: 70%;
+  margin-right: 2%;
+  padding: .5rem;
+  font-size: 1.2rem;
+}
+.add-btn{
+  width: 27%;
+  display: inline-block;
+  padding: .5rem;
+  background-color: gray;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.lists{
+  list-style: none;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+li{
+  padding: .5rem;
+  font-size: 1.2rem;
+  margin: .5rem 0;
+  background-color: lightgray;
+  position: relative;
+
+
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+
+}
+li:hover{
+  background-color: gray;
+}
+li:checked{
+  background-color: darkgray;
+}
+li:checked::before{
+  content: "";
+  top: 10px;
+  left: 16px;
+  background-color: darkgray;
+}
+
+.close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: .5rem .5rem 0 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+.checked{
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}

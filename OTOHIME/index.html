@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音姫 OTOHIME</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <div class="contents-wrapper flex-box">
+      <!-- speaker -->
+      <div class="left">・・・・・・・・・・・
+        ・・・・・・・・・・・
+        ・・・・・・・・・・・
+        ・・・・・・・・・・・
+        ・・・・・・・・・・・
+        ・・・・・・・・・・・
+        ・・・・・・・・・・・
+      </div>
+      <!-- ↓ display -->
+      <div class="right">
+        <div class="btn start" onclick="start()"><audio src="sounds/wave1.mp3" loop="true"></audio>&#8680;<br>start</div>
+        <div class="btn stop" onclick="stop()">■<br>stop</div>
+        <div class="remainingTime">残り秒数：<span class="lighting"></span></div>
+      </div>
+      <!-- ↑ display --> 
+
+    <div class="description">
+      <p>手をかざすと25秒水の流れる音がします。
+        <br>途中でボタンを押すと延長します。
+      </p>
+    </div>
+  </div>
+
+  <footer>TOTO</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
